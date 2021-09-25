@@ -5,11 +5,11 @@ width: 960px;
 grid-gap:20px;
 margin: 15px auto;
 grid-template-columns: repeat(4,1fr);
-grid-template-rows: 80px 180px  480px 45px;
+grid-template-rows: 80px 200px  480px 45px;
 grid-template-areas: 
 "logo . nav nav"
 "header header header header" 
-"main main main main"
+"section section section section"
 "footer footer footer footer";
 }
 
@@ -21,6 +21,9 @@ div,nav,footer
 header
 {
     grid-area: header;
+    align-self: center;
+    margin-bottom: 20px;
+    
 }
 
 nav
@@ -34,13 +37,12 @@ nav ul
     display:grid;
     height:40px;
     grid-template: auto/repeat(4,1fr);
-    justify-items: center;
     align-content:center; 
 }
 
 section
 {
-    grid-area: main;
+    grid-area: section;
     display: grid;
     grid-gap:15px;
     grid-template: repeat(3,1fr)/repeat(3, 1fr);
@@ -54,4 +56,11 @@ footer{
 .logo{
     grid-area: logo;
 
+}
+h1{
+    font-size: 42px;
+}
+h2{
+    font-size: 25px;
+    justify-content: left;
 }

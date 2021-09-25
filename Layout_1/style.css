@@ -1,5 +1,5 @@
 .container{
-    width: 900px;
+    width: 960px;
     font-family: sans-serif;
     display: grid;
     grid-gap:20px;
@@ -21,9 +21,11 @@ nav{
     
 }
 footer{
-    grid-area: footer;
+    grid-area:footer;
     align-content: center;
-    text-align: center;
+    text-align:center;
+    justify-items: center;
+    height: 45px;
 }
 .prod{
     grid-area: prod;
@@ -46,6 +48,8 @@ nav ul{
     grid-template: 20px/repeat(4,1fr);
     list-style-type: none;
     grid-gap:3px;
-    height: 30px;
+    height: 20px;
     align-content:center;
+    
 }
+

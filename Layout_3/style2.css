@@ -26,7 +26,7 @@ h1{
     font-size: 40px;
 }
 h2{
-    font-size: 22px;
+    font-size: 24px;
 }
 header{
     grid-area: header;
@@ -77,4 +77,6 @@ nav ul{
 footer{
     grid-area: footer;
     background: silver;
+    align-content: center;
+    text-align: center;
 }
